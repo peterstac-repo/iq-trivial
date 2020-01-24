@@ -1,0 +1,133 @@
+#header-wrapper {
+    background-color: white;
+    height: 6rem;
+}
+
+#body-wrapper {
+    background-color: lightgrey;
+    position: relative;
+    min-height: 100vh;
+    margin: 0px;
+    padding; 0px;
+}
+
+#content-wrapper {
+    margin-top: 1em;
+    padding: 20px;
+    padding-bottom: 3.5em;
+}
+
+#footer-wrapper {
+    background-color: white;
+    color: darkgrey;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5em;
+}
+
+#id-buttons
+
+li a {
+  color: darkblue;
+}
+
+h1 {
+    font-style: bold;
+    color: black;
+    font-size: 2em;
+}
+
+h2 {
+    color: black;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: black;
+    font-size: 1em;
+}
+
+img {
+  border: 0px solid black;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  img: border: 3px solid black;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Centered text */
+.map-centered {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}

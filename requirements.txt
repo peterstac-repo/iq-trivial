@@ -1,0 +1,24 @@
+# Run with:
+# python3 -m pip install -r requirements.txt
+
+# base utilities, etc.
+configparser
+jinja2
+wheel
+
+# Django
+Django~=2.2.4
+
+# MySQL
+# mysql-python
+PyMySQL[rsa]
+mysqlclient
+
+# install addons etc.
+django-extensions
+
+# install apps etc.
+django-tables2
+django-filter
+django-crispy-forms
+

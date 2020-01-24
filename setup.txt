@@ -1,0 +1,28 @@
+# Create project
+export PROJ_DIR=iq-trivia
+export PROJ_NAME=iq_trivia
+mkdir -p $PROJ_DIR
+cd $PROJ_DIR
+
+# Install virtualenv
+sudo apt-get install -y python3-venv
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+
+# Go back and create the project
+cd ..
+django-admin startproject $PROJ_NAME $PROJ_DIR
+cd $PROJ_DIR
+
+#
+# Create new app in proj dir
+#
+python manage.py startapp game
+# Now add to installed_apps and urls
+cd $PROJ_NAME
+vi settings.py urls.py
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser --username=iq_admin --email=your_email_addr@gmail.com

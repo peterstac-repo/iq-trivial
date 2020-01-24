@@ -1,0 +1,15 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+
+<h1>Welcome to the Game of IQ Trivial!</h1>
+<br>
+
+{% if user.is_authenticated %}
+<h2>Quick Links:</h2>
+<li><a href="/iq-trivial/games">Games</a></li>
+{% else %}
+<h3>Please login using the link above</h3>
+{% endif %}
+
+{% endblock content %}

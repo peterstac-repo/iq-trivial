@@ -1,0 +1,20 @@
+{% extends 'game/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<form>
+  Name: <input type="integer" name="name" value="{{ game.name }}"><br>
+  Status: <input type="text" name="status" value="{{ game.status }}"><br>
+  Rounds: <input type="text" name="num_rounds" value="{{ game.num_rounds }}"><br>
+  <br>
+  <hr>
+  Players:<br>
+  {% for player in players %}
+  <input type="text" name="player" value="{{ player.name }} {% if player.is_owner %} (owner){% endif %}" size=100/><br>
+  {% endfor %}
+  <hr>
+
+</form>
+
+{% endblock %}
